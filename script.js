@@ -290,6 +290,7 @@ class Game extends Component {
     this.score = 0;
     this.playedSets = 0;
     this.images = [];
+    this.currentImageIndex = 0;
   }
   /**
    *
@@ -496,36 +497,36 @@ class Game extends Component {
 
 const game = new Game();
 const shuffle = [
-  { nationality: 'japanese', url: '/images/japan17.jpeg' },
-  { nationality: 'korean', url: '/images/korea8.jpeg' },
-  { nationality: 'chineese', url: '/images/chin2.jpg' },
-  { nationality: 'chineese', url: '/images/chin9.jpg' },
-  { nationality: 'korean', url: '/images/korea1.jpeg' },
-  { nationality: 'japanese', url: '/images/japan20.jpg' },
-  { nationality: 'japanese', url: '/images/japan10.jpg' },
-  { nationality: 'thai', url: '/images/thai8.jpg' },
-  { nationality: 'japanese', url: '/images/japan14.jpg' },
-  { nationality: 'chineese', url: '/images/chin1.jpg' },
-  { nationality: 'chineese', url: '/images/chin11.jpg' },
-  { nationality: 'japanese', url: '/images/japan8.jpg' },
-  { nationality: 'chineese', url: '/images/chin13.jpg' },
-  { nationality: 'japanese', url: '/images/japan20.jpg' },
-  { nationality: 'japanese', url: '/images/japan6.jpg' },
-  { nationality: 'chineese', url: '/images/chin16.jpg' },
-  { nationality: 'thai', url: '/images/thai10.jpg' },
-  { nationality: 'japanese', url: '/images/japan4.jpg' },
-  { nationality: 'korean', url: '/images/korea3.jpeg' },
-  { nationality: 'thai', url: '/images/thai4.jpg' },
-  { nationality: 'japanese', url: '/images/japan20.jpg' },
-  { nationality: 'thai', url: '/images/thai1.jpg' },
-  { nationality: 'thai', url: '/images/thai13.png' },
-  { nationality: 'japanese', url: '/images/japan16.jpg' },
-  { nationality: 'chineese', url: '/images/chin6.jpg' },
-  { nationality: 'korean', url: '/images/korea6.jpeg' },
-  { nationality: 'thai', url: '/images/thai6.jpg' },
-  { nationality: 'japanese', url: '/images/japan11.jpeg' },
-  { nationality: 'japanese', url: '/images/japan9.jpg' },
-  { nationality: 'chineese', url: '/images/chin4.jpeg' },
+  { nationality: 'japanese', url: 'images/japan17.jpeg' },
+  { nationality: 'korean', url: 'images/korea8.jpeg' },
+  { nationality: 'chineese', url: 'images/chin2.jpg' },
+  { nationality: 'chineese', url: 'images/chin9.jpg' },
+  { nationality: 'korean', url: 'images/korea1.jpeg' },
+  { nationality: 'japanese', url: 'images/japan20.jpg' },
+  { nationality: 'japanese', url: 'images/japan10.jpg' },
+  { nationality: 'thai', url: 'images/thai8.jpg' },
+  { nationality: 'japanese', url: 'images/japan14.jpg' },
+  { nationality: 'chineese', url: 'images/chin1.jpg' },
+  { nationality: 'chineese', url: 'images/chin11.jpg' },
+  { nationality: 'japanese', url: 'images/japan8.jpg' },
+  { nationality: 'chineese', url: 'images/chin13.jpg' },
+  { nationality: 'japanese', url: 'images/japan20.jpg' },
+  { nationality: 'japanese', url: 'images/japan6.jpg' },
+  { nationality: 'chineese', url: 'images/chin16.jpg' },
+  { nationality: 'thai', url: 'images/thai10.jpg' },
+  { nationality: 'japanese', url: 'images/japan4.jpg' },
+  { nationality: 'korean', url: 'images/korea3.jpeg' },
+  { nationality: 'thai', url: 'images/thai4.jpg' },
+  { nationality: 'japanese', url: 'images/japan20.jpg' },
+  { nationality: 'thai', url: 'images/thai1.jpg' },
+  { nationality: 'thai', url: 'images/thai13.png' },
+  { nationality: 'japanese', url: 'images/japan16.jpg' },
+  { nationality: 'chineese', url: 'images/chin6.jpg' },
+  { nationality: 'korean', url: 'images/korea6.jpeg' },
+  { nationality: 'thai', url: 'images/thai6.jpg' },
+  { nationality: 'japanese', url: 'images/japan11.jpeg' },
+  { nationality: 'japanese', url: 'images/japan9.jpg' },
+  { nationality: 'chineese', url: 'images/chin4.jpeg' },
 ];
 const reset = (score = null) => {
   console.log(shuffle);
